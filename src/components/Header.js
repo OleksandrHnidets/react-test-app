@@ -9,12 +9,7 @@ const Header = (props) => {
         console.log('Click')
     }
     
-    return (
-        <header className='header'>
-            <h1>{props.title}</h1>
-            <AddButton onClick={onClickEvent} text='Add task' color='green'/>
-        </header>
-    )
+    return <h1 className='textheader'>{props.title}</h1> 
 }
 
 Header.defaultProps={
